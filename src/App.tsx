@@ -251,17 +251,6 @@ export default function App() {
       {/* Navbar */}
       <Navbar scrolled={scrolled} mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} scrollTo={scrollTo} />
 
-      {/* Floating Mobile CTA */}
-      <motion.a
-        href="#contact"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2 }}
-        className="fixed bottom-5 left-5 right-5 md:hidden z-40 btn-primary font-semibold py-4 rounded-full text-center shadow-2xl flex items-center justify-center gap-2"
-      >
-        <Phone size={18} /> Request Consultation
-      </motion.a>
-
       {/* Back to top */}
       <AnimatePresence>
         {showBackTop && (
